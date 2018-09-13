@@ -1,6 +1,7 @@
 //This program forms a basic framework for a Person class in JS
 //Written by Royce Lloyd for CS 336 at Calvin College
 //9-14-2018
+//Test blocks are commented out. Please uncomment at your own pace as you test the code.
 
 //Create constructor method for person with opening arguments
 function Person(firstName, lastName, birthday, friends){
