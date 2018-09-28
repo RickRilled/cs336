@@ -3,13 +3,16 @@ h3.numbered {
 	counter-reset: mynum;
 	
 }
-h3:before{
-	counter-reset: myletter;
+h3:before{	
 	content: "(" counter(myletter, upper-alpha) ")";
 	counter-increment: myletter;
 }
 h3 {
 	border-top: 1px solid gray;
+}
+
+li{
+	border: 8px blue;
 }
 
 
