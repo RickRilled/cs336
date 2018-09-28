@@ -1,0 +1,22 @@
+/* numbered paragraphs */
+h3.numbered {
+	counter-reset: mynum;
+	
+}
+h3:before{
+	counter-reset: myletter;
+	content: "(" counter(myletter, upper-alpha) ")";
+	counter-increment: myletter;
+}
+h3 {
+	border-top: 1px solid gray;
+}
+
+
+ 
+p.numbered:before {
+  content: counter(mynum, lower-roman) ": ";
+  counter-increment: mynum;
+  font-weight: bold;
+  
+}

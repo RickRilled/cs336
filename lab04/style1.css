@@ -1,0 +1,31 @@
+/*** CSS Tutorial: Color page ***/
+
+/* page font */
+body {
+  font: 16px "Comic Sans MS", cursive;
+  background: url("vander-pranked.jpeg");
+}
+
+/* paragraphs */
+p:before{
+	 content: url("Yellow-pin.png");
+}
+p {
+  color: blue;
+}
+#first {
+  font-style: italic;
+}
+
+/* initial letters */
+strong {
+  background-color: #ddf; 
+  color: #f0f;
+  font: 200% serif;
+}
+
+.spinach {
+  color: green;
+  background-color: #ddf;
+}
+
