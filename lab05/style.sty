@@ -1,0 +1,83 @@
+font-size = 20px/20px
+
+
+body 
+    font: 24px Helvetica
+    background: #999999
+
+
+#main 
+    min-height: 800px
+    margin: 0px
+    padding: 0px
+    display: flex
+    flex-flow: row
+
+ 
+#main > article 
+
+    font
+    padding: 0px
+    border: 1px solid #000000
+    background: #dddd88
+    flex: 3 1 60%
+    order: 2
+    font-family: Georgia, serif
+
+
+#main > nav 
+
+    padding: 10px
+    border: 1px solid #000000
+    background: #ccccff
+    flex: 1 6 20%
+    order: 1
+    font-family: "Times New Roman", Times, serif
+
+  
+#main > aside 
+
+    padding: 1px
+    border: 1px solid #000000
+    background: #ccccff
+    flex: 1 6 20%
+    order: 3
+    font-family: "Times New Roman", Times, serif
+
+ 
+header 
+    display: block
+    padding: 15px
+    margin: 4px
+    min-height: 100px
+    border: 1px solid #eebb55
+    background: #ffeebb
+    font: bold font-size arial, sans-serif
+
+
+
+footer 
+    display: block
+    padding: 15px
+    margin: 4px
+    min-height: 100px
+    border: 1px solid #eebb55
+    background: #ffeebb
+    font: italic bold 12px/30px Georgia, serif
+
+ 
+/* Too narrow to support three columns */
+@media all and (max-width: 640px) 
+    #main, #page 
+        flex-direction: column
+    
+
+    #main > article, #main > nav, #main > aside 
+    /* Return them to document order */
+        /*order: 0*/
+    
+
+  
+#main > nav, #main > aside, header, footer 
+    min-height: 50px
+    max-height: none
