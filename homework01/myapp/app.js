@@ -44,6 +44,7 @@ app.get('/person/:loginID', (req,res) => {
 			res.json(user)
 		}
 	})
+	res.sendStatus(404)
 })
 
 app.get('/person/:loginID/name', (req,res) => {
@@ -53,6 +54,7 @@ app.get('/person/:loginID/name', (req,res) => {
 			res.json(fullName)
 		}
 	})	
+	res.sendStatus(404)
 })
  
  app.get('/person/:loginID/years', (req, res) => {	
@@ -64,7 +66,7 @@ app.get('/person/:loginID/name', (req,res) => {
 			res.json(service)
 		}
 	})	
-
+	res.sendStatus(404)
  })
 
 
