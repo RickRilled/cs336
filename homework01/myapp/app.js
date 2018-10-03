@@ -40,11 +40,32 @@ app.get('/people', (req,res) => res.json(users))
 
 app.get('/person/:loginID', (req,res) => {
 	users.forEach((user) => {
-		if(user.loginID == req.params[0]){
+		if(user.loginID == req.params.loginID){
 			res.json(user)
 		}
-		res.json(user)
+	})
+})
+
+app.get('/person/:loginID/name', (req,res) => {
+	users.forEach((user) => {
+		if(user.loginID == req.params.loginID){
+			let fullName = user.firstName + ' ' + user.lastName
+			res.json(fullName)
+		}
 	})	
 })
  
+ app.get('/person/:loginID/years', (req, res) => {	
+	users.forEach((user) => {
+		if(user.loginID == req.params.loginID){
+			var today = new Date()
+			var startDate = new Date(user.startDate)
+			var service = today.getFullYear() - startDate.getFullYear()
+			res.json(service)
+		}
+	})	
+
+ })
+
+
 app.listen(port, () => console.log(`Running on ${port}!`))
