@@ -7,19 +7,19 @@ var bodyParser= require('body-parser')
 
 var users=[
 {
-	loginID:"0000",
+	loginID: "0000",
 	firstName: "Admin",
 	lastName: "Admin",
 	startDate: "1/1/1970"
 },
 {
-	loginID:"0001",
+	loginID: "0001",
 	firstName: "Royce",
 	lastName: "Lloyd",
 	startDate: "4/7/1997"
 },
 {
-	loginID:"0002",
+	loginID: "0002",
 	firstName: "Ruby",
 	lastName: "Soho",
 	startDate: "11/3/1995"
@@ -40,10 +40,11 @@ app.get('/people', (req,res) => res.json(users))
 
 app.get('/person/:loginID', (req,res) => {
 	users.forEach((user) => {
-		if(user.loginID == req.params){
-			res.json(JSON.stringify(user))
+		if(user.loginID == req.params[0]){
+			res.json(user)
 		}
-	})
+		res.json(user)
+	})	
 })
  
 app.listen(port, () => console.log(`Running on ${port}!`))
