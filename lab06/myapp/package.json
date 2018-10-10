@@ -1,0 +1,14 @@
+{
+  "name": "myapp",
+  "version": "1.0.0",
+  "description": "This code is for lab06 CS336 at Calvin College",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "scripts":{
+	"start": "node app.js"
+  },
+  "author": "ril2",
+  "license": "ISC"
+}
