@@ -1,0 +1,3 @@
+A) GET, HEAD, POST seems to be the methods I am able to test using those two tools. I get back the text in res.send() within those methods. Curl cannot resolve the PUT proxy since put requires a resourse to send between the server/client. DELETE needs something to delete or it will not function.
+
+B)
