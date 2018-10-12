@@ -42,4 +42,10 @@ app.all('/request', function (req, res, next) {
 })
 
 
+//Used with the HTML form -------------------------------
+app.post('/form', function(req, res) {
+    res.send('Hello, form POST!<br>Posted message: <code>'
+	     + req.body.user_message + '</code>');
+});
+
 app.listen(port, () => console.log(`Listening on port ${port}!`))
