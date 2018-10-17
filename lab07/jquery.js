@@ -4,8 +4,8 @@ $( document ).ready(function() {
         event.preventDefault();
     });
 
-    $("body#buttonLocation").click(function() {
-		$("<em>", {html: "no data yet..."}).appendTo("body");
+    $("button").click(function (event) {
+		$("<em>", {html: "no data yet..."}).appendTo("body").next("div");
 
 		// $("body").next("div").next("div").html("<p>" + "No data yet..." + "<?p>");
 	});
