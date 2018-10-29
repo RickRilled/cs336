@@ -1,0 +1,44 @@
+
+//Used in conjunction with react/ajax lab
+var validateForm = function(array) {
+  for (let i = 0; i < 3; i++) {
+    if (!array[i] == null && array[i].value == "") {
+      return false;
+    }
+  }
+  return true;
+}
+
+$( 'form' ).submit(function( event ) {
+  event.preventDefault();
+
+  var form = $( this );
+
+  var formData = form.serializeArray();
+
+  if (!validateForm(formData)) {
+    return;
+  }
+
+  var fName = formData[0].value;
+  var lName = formData[1].value;
+  var startDate = formData[2].value;
+  var id = Date.now();
+
+  let passedData = form.serialize();
+
+  passedData = passedData + "&ID=" + id;
+
+  $.ajax({
+    type: 'POST',
+    url: '/people/',
+    data: passedData,
+    dataType: 'json',
+    success: function( resp ) {
+      window.alert("Person added to database!");
+    } 
+
+  });
+
+  $( 'form' )[0].reset();
+});
