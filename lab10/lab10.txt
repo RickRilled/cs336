@@ -1,0 +1,4 @@
+10.1
+A)SQl has a structured query for communicating data. MongoDB uses dynamic schema to orient the data in many ways, such as graph, key-value, and others. 
+B)This means I can edit the collection without going through another interface. I can read/write data from the terminal. However there is less secuity since I am running it in headless mode.
+C)No, because they do not have redundancy abd cannot be sent out for production. 
