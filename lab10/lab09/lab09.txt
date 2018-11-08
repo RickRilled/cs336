@@ -1,0 +1,16 @@
+9.1
+a)After bundling, all the react specification is contained in one file. The browser now also does not have to do the Babel compilations. The bundle is about 2 kB larger than index.js, which is almost ignorable.
+
+b)Bable allows us to use different versions of JS that may not be upported on certain browsers. It also loads all files with a .js extension and extends what we can use with JS, like JSX. 
+
+c)You can, but it does not have the same data set that connecting to the local host contains. You also cannot add comments perminatly. 
+
+d)It uses regular expressions to find all the file extensions that should run through the loader. In this case, it is all the files named *.jsx
+
+9.2
+a)The bundle file is signifacntly larger now and conatins more react information, but the index file hasn't changed much. 
+
+b)Externals allow us to exclude dependancies from the bundle, and instead keep the specification in their file defintions. 
+
+c)
+
