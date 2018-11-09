@@ -2,3 +2,8 @@
 A)SQl has a structured query for communicating data. MongoDB uses dynamic schema to orient the data in many ways, such as graph, key-value, and others. 
 B)This means I can edit the collection without going through another interface. I can read/write data from the terminal. However there is less secuity since I am running it in headless mode.
 C)No, because they do not have redundancy abd cannot be sent out for production. 
+
+10.2
+A)Both worked well for the purposes of this assignment.
+B)The results were almost instant on the client. This means it was like editing comments.json, but is now stored in the cloud, taking up less local data and working just as fast.
+C)I would say noSQL. If we wanted to add a new field to a comment, a noSQL lets us do that without invalidating the other comments. Doing this in SQL requires a schema edit that stops the previous comments from being included in the tables. 
