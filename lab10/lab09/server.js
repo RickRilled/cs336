@@ -16,7 +16,7 @@ var express = require('express');
 var bodyParser = require('body-parser');
 var app = express();
 var MongoClient = require('mongodb').MongoClient;
-export MONGO_PASSWORD = bjarne1
+var MONGO_PASSWORD = 'bjarne1'
 
 MongoClient.connect('mongodb://cs336:bjarne1@ds155203.mlab.com:55203/ril2-cs336', function(err, client){
 	if (err) throw err;
