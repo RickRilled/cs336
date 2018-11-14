@@ -1,0 +1,3 @@
+11.1
+a)Development is desgined to be allowed to fail, and is hosted on the client. It is more memory intensive and is allowed to fail. Production is being hosted on some external service, like the cloud, and is not allowed to fail. In this case, we remove the development server that runs localy so we can run it for everyone outside our system. 
+b)As mentioned, we removed the dev server and included a new plugin environment.
