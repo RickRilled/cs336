@@ -5,9 +5,6 @@
   "description": "Webpacked version of the Facebook tutorial",
   "license": "ISC",
   "main": "server.js",
-  "engines":{
-  	"node": "10.3.0"
-  },
   "dependencies": {
     "autoprefixer": "^9.3.1",
     "babel-core": "^6.26.3",
