@@ -1,3 +1,8 @@
 11.1
 a)Development is desgined to be allowed to fail, and is hosted on the client. It is more memory intensive and is allowed to fail. Production is being hosted on some external service, like the cloud, and is not allowed to fail. In this case, we remove the development server that runs localy so we can run it for everyone outside our system. 
 b)As mentioned, we removed the dev server and included a new plugin environment.
+
+11.2
+a)Because of it's polygat nature, the entire production can run on Heroku and run on multiple different softwares. That way, we don't have to worry about updating and hosting on different sites. 
+b)It can automatically deploy after setting it to connect to a reposititory. Using the package.json, it knows what language it is working in and how to use it. 
+c)https://lab11-cs336-lloyd.herokuapp.com/
