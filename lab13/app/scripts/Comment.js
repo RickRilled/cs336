@@ -19,6 +19,7 @@ module.exports = React.createClass({
           {this.props.author}
         </h2>
         <span dangerouslySetInnerHTML={this.rawMarkup()} />
+        <Link to={'/' + this.props.id}>Edit</Link>
       </div>
     );
   }

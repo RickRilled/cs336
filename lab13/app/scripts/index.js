@@ -12,17 +12,16 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Remarkable from 'remarkable';
-import $ from 'jquery';
-import { Router, Route, browserHistory } from 'react-router';
+import {Router, Route, browserHistory} from 'react-router';
 
-
-import CommentBox from './CommentBox'
+import CommentBox from './CommentBox';
 
 import '../css/base.css';
 
-render((
-  <Router history={browserHistory}>
-    <Route path="/" component={CommentBox}/>
-  </Router>
-), document.getElementById('app'))
+ReactDOM.render((
+        <Router history={browserHistory}>
+            <Route path="/" component={CommentBox}/>
+            <Route path="/:id" component={CommentEdit}/>
+        </Router>
+    ), document.getElementById('content')
+);
