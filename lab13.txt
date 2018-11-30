@@ -7,3 +7,5 @@ c)Hash history creates a hash for each URL, which can be left as is and included
 a)This component state stores author and text. The commentBox component contains a list of comments, which in turn contains all the authors and texts.
 b)These commands tell the router to return to '/', similar to the cancel button.
 c)The link knows which route to take directly, instead of using relative paths.
+
+URL: https://lab13-cs336-lloyd.herokuapp.com/
