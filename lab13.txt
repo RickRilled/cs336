@@ -1,0 +1,9 @@
+13.1
+a)React Routing lets us use these routes like components, such as CommentBox. This is how react thinks about all it's different attributes, which allows us to quickly connect all our different components. Now we can nest all our different components which allows us to stack web pages and add versatility to our application.
+b)Browser history is more commonly used and requires extra configuration on the server to serve up URLs. HashHistory does not require this extra configuration and can serve up URLs, but is generally less prefered than using the browser history, since browserhistory is more user friendly and does not produce urls with random hash numbers in them.
+c)Hash history creates a hash for each URL, which can be left as is and included in the URL. To create browser history, we must adjust the server to take the hash and convert it into something more readable. Normally the hash does not need to be edited. 
+
+13.2
+a)This component state stores author and text. The commentBox component contains a list of comments, which in turn contains all the authors and texts.
+b)These commands tell the router to return to '/', similar to the cancel button.
+c)The link knows which route to take directly, instead of using relative paths.
