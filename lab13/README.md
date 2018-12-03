@@ -11,3 +11,4 @@ the comment list:
 The completed lab exercise will serve as the basis for the application built in
 the "Application" section of the course.
 
+https://dashboard.heroku.com/apps/lab13-cs336-lloyd
